@@ -5,14 +5,14 @@ metadata:
   namespace: redis
 spec:
   hard:
-    requests.cpu: 100m
-    requests.memory: 256Mi
-    limits.cpu: 200m
-    limits.memory: 512Mi
-    requests.storage: 50Gi
-    persistentvolumeclaims: "3"
-    pods: "10"
-    configmaps: "10"
-    secrets: "10"
-    services: "5"
+    requests.cpu: 500m
+    requests.memory: 1Gi
+    limits.cpu: 500m
+    limits.memory: 1Gi
+    requests.storage: 10Gi
+    persistentvolumeclaims: "5"
+    pods: "20"
+    configmaps: "20"
+    secrets: "20"
+    services: "20"
     services.loadbalancers: "0"
