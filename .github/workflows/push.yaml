@@ -27,5 +27,8 @@ jobs:
       - name: Update kubeconfig
         run: aws eks update-kubeconfig --name coloseo
 
-      - name: apply kustomize config
-        run: kubectl apply -k overlays/staging/
+      - name: Set kustomize
+        uses: imranismail/setup-kustomize@v1
+
+      - name: Apply kustomize
+        run: kustomize build overlays/staging | kubectl apply -f -
