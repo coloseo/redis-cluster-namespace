@@ -5,8 +5,8 @@ metadata:
   namespace: redis
 spec:
   hard:
-    requests.cpu: 1000m
-    requests.memory: 2Gi
-    limits.cpu: 4000m
-    limits.memory: 10Gi
-    requests.storage: 20Gi
+    requests.cpu: 3000m
+    requests.memory: 6Gi
+    limits.cpu: 12000m
+    limits.memory: 24Gi
+    requests.storage: 30Gi
