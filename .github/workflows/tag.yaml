@@ -18,7 +18,7 @@ jobs:
 
       - name: Apply kustomize
         env:
-          KUBE_CONFIG_DATA: ${{ secrets.TKE_CONFIG_DATA }}
+          KUBE_CONFIG_DATA: ${{ secrets.TKE_CONFIG_DATA_NJ }}
         run: |
           echo "$KUBE_CONFIG_DATA" | base64 -d > /tmp/config
           export KUBECONFIG=/tmp/config
